@@ -35,12 +35,12 @@ return {
       "nvim-tree/nvim-web-devicons",
       "nvim-lua/plenary.nvim",
     },
-    config = true,
+    opts = {},
   },
 }
 ```
 
-2. Run `:Lazy sync` in Neovim to install the plugin.
+2. Run `:Lazy install` in Neovim to install the plugin.
 
 ## Configuration
 
