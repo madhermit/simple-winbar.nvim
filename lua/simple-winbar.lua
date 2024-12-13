@@ -78,7 +78,7 @@ return {
         local buf = vim.api.nvim_win_get_buf(win)
         local buftype = vim.bo[buf].buftype
         if buftype == "" then -- Only set winbar for normal buffers
-          vim.wo[win].winbar = "%{%v:lua.generate_winbar()%}"
+          vim.wo[win].winbar = "%{%v:lua.generate_winbar()%} "
         else
           vim.wo[win].winbar = nil
         end
